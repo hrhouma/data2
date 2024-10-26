@@ -1,15 +1,88 @@
-# Étape 1
+-------------------------------------------
+# Étape 1 - Installation de Kibana
+-------------------------------------------
+
+1. **Mettre à jour les packages** :
+   ```bash
+   sudo apt update
+   ```
+
+2. **Importer la clé GPG de la suite Elastic** :
+   ```bash
+   wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
+   `
+
+3. **Ajouter le dépôt Elastic** :
+   Ajoutez le dépôt Elastic à votre liste de sources APT :
+   ```bash
+   echo "deb https://artifacts.elastic.co/packages/8.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-8.x.list
+   ```
+   Assurez-vous de remplacer `8.x` par la version spécifique de votre installation Elasticsearch si nécessaire.
+
+4. **Mettre à jour les dépôts** :
+   ```bash
+   sudo apt update
+   ```
+
+5. **Installer Kibana** :
+   Maintenant, vous pouvez installer Kibana avec :
+   ```bash
+   sudo apt install kibana
+   ```
+
+   ##### (OPTIONNEL À IGNORER SVP) Ou téléchargez-le directement avec :
+   ```bash
+   wget https://artifacts.elastic.co/downloads/kibana/kibana-<version>-linux-x86_64.tar.gz
+   tar -xzf kibana-<version>-linux-x86_64.tar.gz
+   ```
+   Remplacez `<version>` par votre version souhaitée.
+
+  
+
+6. **Configurer et démarrer Kibana** :
+   Une fois installé, activez et démarrez Kibana :
+   ```bash
+   sudo systemctl enable kibana
+   sudo systemctl start kibana
+   ```
 
 
-# Étape 2
+7. **Configurer Kibana** :
+   Éditez le fichier de configuration :
+   ```bash
+   sudo nano /etc/kibana/kibana.yml
+   ```
+   Modifiez les paramètres suivants :
+   ```yaml
+   server.port: 5601
+   server.host: "localhost"
+   elasticsearch.hosts: ["http://localhost:9200"]
+   ```
+8 **Démarrer Kibana** :
+   ```bash
+   sudo systemctl start kibana
+   sudo systemctl enable kibana
+   ```
 
 
 
-# Étape 3
 
 
-# Étape 4
 
+
+
+
+
+
+
+
+
+
+
+
+----------
+------------
+-------------
 
 
 
