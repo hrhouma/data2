@@ -65,6 +65,102 @@
    ```
 
 
+9. **Vérifiez l'installation d'Elasticsearch**
+
+Assurez-vous qu'Elasticsearch est bien installé et que son binaire est dans le bon répertoire. Essayez cette commande pour vérifier l'état d'Elasticsearch :
+
+```bash
+sudo systemctl status elasticsearch
+```
+
+Cela vous permettra de voir si Elasticsearch est bien installé et en cours d'exécution.
+
+### **Recherchez le fichier `elasticsearch-create-enrollment-token`**
+Si le fichier de commande n'est pas trouvé dans le chemin spécifié, vous pouvez essayer de le localiser avec cette commande :
+```bash
+sudo find / -name "elasticsearch-create-enrollment-token"
+```
+Cela vous donnera le chemin exact du script d'enrollment.
+
+10. **Mettre à jour Elasticsearch**
+Si la commande est introuvable, il se peut que vous utilisiez une ancienne version d'Elasticsearch qui ne supporte pas les tokens d'enrollment. Vous pouvez vérifier la version installée avec :
+```bash
+curl -X GET "localhost:9200"
+```
+Si votre version est ancienne, vous devrez peut-être mettre à jour Elasticsearch. Vous pouvez le faire avec les commandes suivantes :
+
+```bash
+sudo apt update
+sudo apt upgrade elasticsearch
+```
+
+#### (OPTIONNEL) **Réinstaller Elasticsearch**
+Si vous rencontrez toujours des problèmes, vous pouvez réinstaller Elasticsearch pour vous assurer que toutes les fonctionnalités sont présentes :
+```bash
+sudo apt remove elasticsearch
+sudo apt install elasticsearch
+```
+Ensuite, redémarrez le service Elasticsearch et essayez de générer à nouveau le token.
+
+#### (OPTIONNEL) **Vérifiez les permissions**
+Assurez-vous que vous exécutez les commandes avec les permissions adéquates et que le chemin vers le binaire est correct. Si vous avez installé Elasticsearch manuellement, le chemin peut varier.
+
+
+
+
+
+
+
+
+
+
+
+10. **code de vérification pour lier Kibana à Elasticsearch.**
+
+- Vous devez récupérer ce code depuis le serveur où Kibana est installé.
+- Voici les étapes pour obtenir ce code de vérification :
+
+### 10.1. **Connectez-vous au serveur où Kibana est installé**.
+
+### 10.2. **Exécutez la commande pour récupérer le code de vérification** :
+   Depuis le répertoire d'installation de Kibana, exécutez la commande suivante :
+   ```bash
+   sudo /usr/share/kibana/bin/kibana-verification-code
+   ```
+
+   Cette commande affichera un code à 6 chiffres que vous devrez entrer dans l'écran que vous avez partagé.
+
+### 10.3. **Saisissez le code** :
+
+Une fois que vous avez le code, entrez-le dans les cases à l'écran de Kibana et cliquez sur **Verify**.
+
+Cela validera la connexion entre Kibana et Elasticsearch, et vous pourrez accéder à l'interface Kibana. Si vous rencontrez des problèmes pour exécuter la commande ou obtenir le code, n'hésitez pas à me le signaler.
+
+
+11. **Réinitialisation du mot de passe pour l'utilisateur `elastic`**
+
+L'interface que vous voyez est la page de connexion à Kibana, qui utilise les identifiants d'Elasticsearch pour s'authentifier. Voici quelques détails concernant le mot de passe et le nom d'utilisateur :
+
+### Nom d'utilisateur par défaut
+- Le **nom d'utilisateur** par défaut est `elastic`.
+
+### Mot de passe par défaut
+Le **mot de passe** pour l'utilisateur `elastic` vous est généralement donné lors de la première installation d'Elasticsearch, à moins que vous ne l'ayez modifié manuellement. Si vous avez perdu ou oublié le mot de passe, voici comment le réinitialiser :
+
+### Réinitialisation du mot de passe pour l'utilisateur `elastic`
+11.1 **Exécutez la commande pour réinitialiser le mot de passe** sur votre serveur Elasticsearch :
+   ```bash
+   sudo /usr/share/elasticsearch/bin/elasticsearch-reset-password -u elastic
+   ```
+
+11.2. **Notez le nouveau mot de passe** généré ou entrez-en un nouveau lorsque cela vous est demandé.
+
+11.3. **Utilisez ce nouveau mot de passe** pour vous connecter à Kibana en tant qu'utilisateur `elastic`.
+
+
+
+
+
 
 
 
