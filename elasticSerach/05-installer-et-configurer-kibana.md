@@ -10,7 +10,7 @@
 2. **Importer la clé GPG de la suite Elastic** :
    ```bash
    wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
-   `
+   ```
 
 3. **Ajouter le dépôt Elastic** :
    Ajoutez le dépôt Elastic à votre liste de sources APT :
