@@ -124,6 +124,7 @@ sudo systemctl status kibana
    ```bash
    sudo /usr/share/elasticsearch/bin/elasticsearch-create-enrollment-token -s kibana
    ```
+##### Troubleshooting: https://stackoverflow.com/questions/71193286/error-failed-to-determine-the-health-of-the-cluster
 
 9.4. **Copiez le token généré** dans le terminal.
 
