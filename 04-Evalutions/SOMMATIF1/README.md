@@ -33,3 +33,12 @@ Il faut faire le quiz général de 30 questions dans le dossier quiz [quiz](#qui
 
 - Pour ceux qui souhaitent aller plus loin, un challenge bonus sera disponible, vous permettant d'explorer des fonctionnalités avancées de Terraform.
 - Assurez-vous de lire les fichiers README spécifiques à chaque fournisseur pour des instructions détaillées et des exemples d'utilisation.
+
+
+
+
+# Exemple : 
+
+- Partie 1 - https://github.com/hrhouma/data2/tree/main/04-Evalutions/SOMMATIF1/aws
+- Partie 2 -
+- Partie 3 - 
