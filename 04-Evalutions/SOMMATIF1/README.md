@@ -41,4 +41,4 @@ Il faut faire le quiz général de 30 questions dans le dossier quiz [quiz](#qui
 
 - Partie 1 - https://github.com/hrhouma/data2/tree/main/04-Evalutions/SOMMATIF1/aws
 - Partie 2 -
-- Partie 3 - 
+- Partie 3 - https://github.com/hrhouma/data2/blob/main/04-Evalutions/SOMMATIF1/quiz/01-quiz-01.md
