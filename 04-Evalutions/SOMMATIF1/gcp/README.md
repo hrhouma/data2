@@ -1,4 +1,4 @@
-# Guide de l'exercice : Analyse et compréhension de la configuration Terraform pour GCP
+# Guide de GCP : Analyse et compréhension de la configuration Terraform pour GCP
 
 ---
 
