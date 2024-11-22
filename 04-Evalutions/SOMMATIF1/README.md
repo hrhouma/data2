@@ -27,7 +27,7 @@ Cet examen est conçu pour vous aider à vous familiariser avec les concepts de 
 
 # Tâche 3 :  Quiz 2 (30%)
 
-Il faut faire le quiz général de 30 questions dans le dossier quiz [quiz](#01-quiz-01.md) - 30%
+Il faut faire le quiz général de 30 questions dans le dossier quiz [quiz](#quiz/01-quiz-01.md) - 30%
 
 #### Challenge Bonus
 
