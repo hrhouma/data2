@@ -18,14 +18,14 @@ Cet examen est conçu pour vous aider à vous familiariser avec les concepts de 
 - `azure/` : Contient les fichiers de configuration pour Azure.
 - `gcp/` : Contient les fichiers de configuration pour GCP.
 
-# Tâche 1 :
+# Tâche 1 (40%):
 - Choisir un des dossiers : expliquer et commentez le code (lire le readme) - 40%
 
-# Tâche 2 : Quiz 1
+# Tâche 2 : Quiz 1 (30%)
 
 À la fin de votre projet, un quiz sera proposé pour évaluer votre compréhension des concepts abordées, vous choisissez un seul par exemple aws - 30%
 
-# Tâche 3 :  Quiz 2
+# Tâche 3 :  Quiz 2 (30%)
 
 Il faut faire le quiz général de 30 questions dans le dossier quiz [quiz](#01-quiz-01.md) - 30%
 
