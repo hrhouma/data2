@@ -16,3 +16,15 @@
 14. [http://34.209.147.137/wp-admin](http://34.209.147.137/wp-admin)
 15. [https://kubpoint.com/wp-admin](https://kubpoint.com/wp-admin)
 
+
+
+https://gpsites.co/info/
+https://gpsites.co/scribe/
+https://gpsites.co/newsroom/
+https://demo.phlox.pro/tech-magazine/?r=landing-pro
+https://demo.phlox.pro/blog-1/?r=landing-pro
+https://demo.phlox.pro/magazine-pro/?r=landing-pro
+https://demo.phlox.pro/newspaper/?r=landing-pro
+
+
+
