@@ -9,6 +9,10 @@ Ce guide est conçu pour un étudiant **débutant** en programmation. Nous allon
 ### Organigramme de l'application:
 
 
+### Django + React. 
+- Nous illustrons les différentes couches (frontend, backend, API) et leur interaction.
+
+```
                               +----------------------+
                               |   Utilisateur final  |
                               | (Navigateur Web)     |
@@ -65,6 +69,32 @@ Ce guide est conçu pour un étudiant **débutant** en programmation. Nous allon
                               |   Utilisateur final  |
                               | (Navigateur Web)     |
                               +----------------------+
+```
+
+### **Détails des composants**
+1. **Frontend (React)** :
+   - Reçoit les messages de l'utilisateur.
+   - Envoie les messages au backend via Axios (API REST).
+   - Affiche la réponse du chatbot.
+
+2. **Backend (Django)** :
+   - Traite les requêtes de l'utilisateur via des routes (API).
+   - Envoie le message à l'API OpenAI.
+   - Retourne la réponse générée au frontend.
+
+3. **OpenAI API** :
+   - Reçoit les messages envoyés par Django.
+   - Génère une réponse basée sur le modèle GPT-3.5/GPT-4.
+   - Retourne la réponse au backend.
+
+### **Flux des données**
+1. **Utilisateur → React** : L'utilisateur saisit un message.
+2. **React → Django (API)** : Le message est envoyé au backend.
+3. **Django → OpenAI** : Le backend appelle l'API OpenAI pour générer une réponse.
+4. **OpenAI → Django** : L'API OpenAI retourne la réponse générée.
+5. **Django → React** : La réponse est renvoyée au frontend.
+6. **React → Utilisateur** : La réponse est affichée à l'utilisateur final.
+
 
 
 ---
