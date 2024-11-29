@@ -5,6 +5,68 @@ Ce guide est conçu pour un étudiant **débutant** en programmation. Nous allon
 
 ### Références : 
 - https://blogs.chainlyzer.com/building-an-ai-chatbot-in-less-than-an-hour-using-django-and-react-8625898d9291
+
+### Organigramme de l'application:
+
+
+                              +----------------------+
+                              |   Utilisateur final  |
+                              | (Navigateur Web)     |
+                              +----------------------+
+                                       |
+                                       | HTTP (Requête utilisateur)
+                                       v
++---------------------------------------------+
+|                Frontend (React)             |
+|---------------------------------------------|
+| - src/                                       |
+|   - App.js (Composant principal)            |
+|   - Chatbot.js (Interface utilisateur)      |
+| - Axios (Requêtes vers le backend)          |
++---------------------------------------------+
+                                       |
+                                       | API Request (HTTP POST)
+                                       v
++---------------------------------------------+
+|              Backend (Django)               |
+|---------------------------------------------|
+| - chatbot_project/                          |
+|   - settings.py (Configuration globale)     |
+|   - urls.py (Routes principales)            |
+| - chatbot/                                  |
+|   - views.py (Logique API)                  |
+|   - models.py (Stockage historique, option) |
++---------------------------------------------+
+                                       |
+                                       | OpenAI API Call (Requête externe)
+                                       v
++---------------------------------------------+
+|               OpenAI (ChatGPT)              |
+|---------------------------------------------|
+| - Modèle GPT-3.5 ou GPT-4                   |
+| - Génération des réponses                  |
++---------------------------------------------+
+                                       ^
+                                       | Réponse du modèle (Texte)
+                                       |
++---------------------------------------------+
+|              Backend (Django)               |
+|---------------------------------------------+
+                                       ^
+                                       | API Response (HTTP Response JSON)
+                                       |
++---------------------------------------------+
+|                Frontend (React)             |
+|---------------------------------------------+
+                                       ^
+                                       | Affichage de la réponse bot
+                                       |
+                              +----------------------+
+                              |   Utilisateur final  |
+                              | (Navigateur Web)     |
+                              +----------------------+
+
+
 ---
 
 # **1. Préparer votre environnement de développement**
