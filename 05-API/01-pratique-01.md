@@ -240,6 +240,8 @@ npm install axios
 #### **A. Créer une application Django pour le chatbot**
 1. Créez une nouvelle application appelée "chatbot" :
    ```bash
+   cd monchatbot
+   django-admin startproject chatbot
    python manage.py startapp chatbot
    ```
 
