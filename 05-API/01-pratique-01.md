@@ -87,6 +87,7 @@ Ce guide est conçu pour un étudiant **débutant** en programmation. Nous allon
 #### **A. Installer React**
 1. Dans un autre terminal, créez un projet React :
    ```bash
+   npm install -g create-react-app
    npx create-react-app chatbot_frontend
    ```
    - Cela crée une application React dans le dossier `chatbot_frontend`.
