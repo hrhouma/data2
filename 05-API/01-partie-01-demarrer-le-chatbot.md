@@ -1,5 +1,5 @@
 
-## Préparation de l'environnement de développement
+# partie 01 - Préparation de l'environnement de développement
 
 ### Références : 
 - https://blogs.chainlyzer.com/building-an-ai-chatbot-in-less-than-an-hour-using-django-and-react-8625898d9291
