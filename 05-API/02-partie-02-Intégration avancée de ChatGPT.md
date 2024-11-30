@@ -1,5 +1,4 @@
-
-# partie 02 Intégration avancée de ChatGPT
+# partie 02 - Intégration avancée de ChatGPT
 
 ### Configuration de l'API OpenAI
 
@@ -182,7 +181,7 @@ Importez ce fichier CSS dans `Chatbot.js` :
 import './Chatbot.css';
 ```
 
-Ces améliorations apportent une meilleure intégration de ChatGPT, une gestion de l'historique des conversations, et une interface utilisateur plus attrayante. Le chatbot est maintenant capable de maintenir un contexte de conversation et d'afficher les messages de manière plus esthétique.
+
 
 
 -------------------------
@@ -195,8 +194,8 @@ Ces améliorations apportent une meilleure intégration de ChatGPT, une gestion 
 Voici le contenu **complet et détaillé** de chaque fichier que vous avez mentionné, avec des explications pédagogiques pour les étudiants débutants.
 
 ---
-
-### **1. App.js (React - Composant Principal)**
+# **1. App.js (React - Composant Principal)**
+---
 
 Le composant `App.js` est le point d'entrée principal de l'application React. Il inclut le composant `Chatbot` que nous avons créé séparément.
 
@@ -221,8 +220,8 @@ export default App;
   - La classe CSS `"App"` peut être stylisée dans un fichier séparé (exemple : `App.css`).
 
 ---
-
-### **2. Chatbot.js (React - Interface du Chatbot)**
+# **2. Chatbot.js (React - Interface du Chatbot)**
+---
 
 Ce composant gère :
 - Les messages échangés entre l'utilisateur et le bot.
@@ -286,8 +285,8 @@ export default Chatbot;
   - **UI** : Affiche les messages sous forme de paragraphes (`<p>`).
 
 ---
-
-### **3. views.py (Django - Logique de l'API)**
+# **3. views.py (Django - Logique de l'API)**
+---
 
 Cette vue Django reçoit les messages de l'utilisateur via une requête POST, et retourne une réponse JSON simulée.
 
@@ -312,8 +311,8 @@ def chatbot_response(request):
   - `POST` : Traite uniquement les requêtes POST.
 
 ---
-
-### **4. settings.py (Django - Configuration)**
+# **4. settings.py (Django - Configuration)**
+---
 
 Voici le fichier de configuration ajusté pour activer **corsheaders** et l’application `chatbot_app`.
 
@@ -353,8 +352,8 @@ DATABASES = {
 ```
 
 ---
-
-### **5. urls.py (Django - Routage)**
+# **5. urls.py (Django - Routage)**
+---
 
 Ce fichier définit les chemins d’accès pour les vues Django.
 
