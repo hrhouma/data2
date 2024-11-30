@@ -1,14 +1,16 @@
 # partie 02 - Intégration avancée de ChatGPT
 
-### Configuration de l'API OpenAI
+------------------
+# 1. Configuration de l'API OpenAI
+------------------
 
-1. Installez la bibliothèque OpenAI :
+## 1.1. Installez la bibliothèque OpenAI :
 
 ```bash
 pip install openai
 ```
 
-2. Dans `chatbot_project/settings.py`, ajoutez votre clé API OpenAI :
+## 1.2. Dans `chatbot_project/settings.py`, ajoutez votre clé API OpenAI :
 
 ```python
 import os
@@ -16,7 +18,9 @@ import os
 OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY', 'votre-clé-api-ici')
 ```
 
-### Modification de la vue Django
+------------------
+# 2. Modification de la vue Django
+------------------
 
 Modifiez `chatbot_app/views.py` pour intégrer l'API OpenAI :
 
@@ -50,7 +54,9 @@ def chatbot_response(request):
         return JsonResponse({'error': 'Requête invalide'}, status=400)
 ```
 
-### Amélioration du frontend React
+------------------
+# 3. Amélioration du frontend React
+------------------
 
 Modifiez `chatbot_frontend/src/Chatbot.js` pour gérer l'historique des conversations :
 
@@ -112,7 +118,9 @@ const Chatbot = () => {
 export default Chatbot;
 ```
 
-### Ajout de styles CSS
+------------------
+# 4. Ajout de styles CSS
+------------------
 
 Créez un fichier `chatbot_frontend/src/Chatbot.css` :
 
@@ -189,7 +197,7 @@ import './Chatbot.css';
 -------------------------
 
 
-### Classes, Fichiers et Composants (Exhaustif)
+# Classes, Fichiers et Composants (Exhaustif)
 
 Voici le contenu **complet et détaillé** de chaque fichier que vous avez mentionné, avec des explications pédagogiques pour les étudiants débutants.
 
@@ -314,7 +322,7 @@ def chatbot_response(request):
 # **4. settings.py (Django - Configuration)**
 ---
 
-Voici le fichier de configuration ajusté pour activer **corsheaders** et l’application `chatbot_app`.
+Modifiez le fichier de configuration ajusté pour activer **corsheaders** et l’application `chatbot_app`.
 
 ```python
 INSTALLED_APPS = [
@@ -368,15 +376,18 @@ urlpatterns = [
 ]
 ```
 
+
+
 - **Explication :**
   - `path("api/chatbot/")` : Définit le point d'accès pour le chatbot, accessible via `/api/chatbot/`.
 
 ---
 
-### **Lancement du projet**
+# **Lancement du projet**
 
 1. **Démarrer Django :**
    ```bash
+   set OPENAI_API_KEY=sk-proj-7j3JXXXXXXXXXXXXXXgIjdAqT2XXXXXXXXXXXXX
    python manage.py runserver
    ```
 
