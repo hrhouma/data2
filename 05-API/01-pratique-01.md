@@ -253,6 +253,59 @@ npm install axios
    ]
    ```
 
+--------------
+-------------
+-------------
+
+
+### **5. Créer une API dans Django**
+
+#### **A. Créer une application Django pour le chatbot**
+1. **Créer un projet Django :**
+   Assurez-vous que vous travaillez dans un répertoire propre, puis créez un projet Django :
+   ```bash
+   django-admin startproject chatbot_project
+   cd chatbot_project
+   ```
+
+2. **Créer une application pour le chatbot :**
+   Nommez votre application avec un nom unique (par exemple `chatbot_app`) pour éviter les conflits avec des modules intégrés de Python :
+   ```bash
+   python manage.py startapp chatbot_app
+   ```
+
+---
+
+#### **B. Ajouter l'application dans `INSTALLED_APPS`**
+
+1. Ouvrez le fichier `chatbot_project/settings.py` et ajoutez `chatbot_app` dans la liste `INSTALLED_APPS` :
+   ```python
+   INSTALLED_APPS = [
+       ...,
+       'chatbot_app',
+   ]
+   ```
+
+---
+
+### Résumé des étapes corrigées :
+
+- **Projet principal** : `chatbot_project`
+- **Application** : `chatbot_app` (nom unique pour éviter les conflits)
+- **Fichier à modifier** : `chatbot_project/settings.py` pour y inclure l’application.
+
+
+
+--------------
+--------------
+
+
+
+
+
+
+
+
 #### **B. Ajouter une vue pour traiter les requêtes**
 1. Dans `chatbot/views.py`, ajoutez :
    ```python
