@@ -1,5 +1,5 @@
 
-## Intégration avancée de ChatGPT
+# partie 02 Intégration avancée de ChatGPT
 
 ### Configuration de l'API OpenAI
 
