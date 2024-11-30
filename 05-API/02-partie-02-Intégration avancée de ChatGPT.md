@@ -396,6 +396,9 @@ urlpatterns = [
    npm start
    ```
 
+![image](https://github.com/user-attachments/assets/eb536c19-6eb4-4b16-8704-f6688803f5d1)
+
+
 3. **Tester l’application :**
    - Accédez au frontend via [http://localhost:3000](http://localhost:3000).
    - Envoyez un message pour voir la réponse générée par le backend Django.
