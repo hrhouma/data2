@@ -3,8 +3,6 @@
 
 Ce guide est conçu pour un étudiant **débutant** en programmation. Nous allons créer un projet où Django (backend) et React (frontend) fonctionnent ensemble pour construire un chatbot interactif basé sur ChatGPT. Suivez ces étapes dans l'ordre.
 
-### Références : 
-- https://blogs.chainlyzer.com/building-an-ai-chatbot-in-less-than-an-hour-using-django-and-react-8625898d9291
 
 ### Organigramme de l'application:
 
