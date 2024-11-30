@@ -1,4 +1,7 @@
+----------------------------------------------------
 # Partie 01 - Architecture du projet
+----------------------------------------------------
+
 ```
 monchatbot/
 ├── chatbot_frontend/                  # Projet React (Frontend)
@@ -60,12 +63,9 @@ monchatbot/
    - Fichiers isolant les dépendances Python nécessaires au projet.
 
 
-
-# Partie 2
-
-
-
-### Organigramme de l'application:
+----------------------------------------------------
+# Partie 2 - Organigramme de l'application:
+----------------------------------------------------
 
 
 ### Django + React. 
