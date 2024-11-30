@@ -42,7 +42,7 @@ monchatbot/
 └── README.md                          # Documentation générale du projet
 ```
 
-### **Explication des composants :**
+# **Explication des composants :**
 
 1. **`chatbot_frontend/`** :
    - Contient tout le code React pour le frontend de l'application.
@@ -68,7 +68,7 @@ monchatbot/
 ----------------------------------------------------
 
 
-### Django + React. 
+# Django + React. 
 - Nous illustrons les différentes couches (frontend, backend, API) et leur interaction.
 
 ```
@@ -130,7 +130,7 @@ monchatbot/
                               +----------------------+
 ```
 
-### **Détails des composants**
+# **Détails des composants**
 1. **Frontend (React)** :
    - Reçoit les messages de l'utilisateur.
    - Envoie les messages au backend via Axios (API REST).
@@ -146,7 +146,7 @@ monchatbot/
    - Génère une réponse basée sur le modèle GPT-3.5/GPT-4.
    - Retourne la réponse au backend.
 
-### **Flux des données**
+# **Flux des données**
 1. **Utilisateur → React** : L'utilisateur saisit un message.
 2. **React → Django (API)** : Le message est envoyé au backend.
 3. **Django → OpenAI** : Le backend appelle l'API OpenAI pour générer une réponse.
