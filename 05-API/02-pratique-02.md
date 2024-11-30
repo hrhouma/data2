@@ -567,6 +567,9 @@ urlpatterns = [
 
 ### **Lancement du projet**
 
+![image](https://github.com/user-attachments/assets/dc703663-e759-49e0-ba72-54e132b4179f)
+
+
 1. **Démarrer Django :**
    ```bash
    python manage.py runserver
