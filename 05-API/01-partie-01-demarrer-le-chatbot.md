@@ -1,10 +1,11 @@
-
+------------------------------------------------------------------------
 # partie 01 - Préparation de l'environnement de développement
+------------------------------------------------------------------------
 
-### Références : 
+## Références : 
 - https://blogs.chainlyzer.com/building-an-ai-chatbot-in-less-than-an-hour-using-django-and-react-8625898d9291
 
-### Prérequis
+## Prérequis
 
 1. Assurez-vous d'avoir installé :
    - Python (version 3.8 ou supérieure)
@@ -12,7 +13,9 @@
    - Visual Studio Code (ou un autre éditeur de texte)
    - Git
 
-### Installation des outils
+-----------------------------------------
+# 01 - Installation des outils
+-----------------------------------------
 
 1. Vérifiez vos installations :
 
@@ -21,10 +24,11 @@ python --version
 node --version
 npm --version
 ```
+-----------------------------------------
+# 02 - Configuration du projet Django
+-----------------------------------------
 
-## Configuration du projet Django
-
-### Création de l'environnement virtuel et installation de Django
+## 02-1 Création de l'environnement virtuel et installation de Django
 
 1. Ouvrez un terminal et exécutez :
 
@@ -61,7 +65,7 @@ python -m venv env
 pip install django
 ```
 
-### Création du projet Django
+## 02-2 Création du projet Django
 
 1. Créez le projet et créez l'application :
 
@@ -83,9 +87,11 @@ INSTALLED_APPS = [
 ]
 ```
 
-## Configuration de React
+-----------------------------------------
+# 03 - Configuration de React
+-----------------------------------------
 
-### Installation de React
+## 03-1 Installation de React
 
 1. Dans un nouveau terminal, créez le projet React :
 
@@ -100,15 +106,18 @@ cd chatbot_frontend
 npm install axios
 ```
 
-## Configuration de Django pour travailler avec React
 
-1. Installez django-cors-headers :
+--------------
+# 04- Configuration de Django pour travailler avec React
+--------------
+
+## 04.1. Installez django-cors-headers :
 
 ```bash
 pip install django-cors-headers
 ```
 
-2. Modifiez `chatbot_project/settings.py` :
+## 04.2. Modifiez `chatbot_project/settings.py` :
 
 ```python
 INSTALLED_APPS = [
@@ -127,7 +136,9 @@ CORS_ALLOWED_ORIGINS = [
 ]
 ```
 
-## Création de l'API Django
+-----------------------------------------
+# 05- Création de l'API Django
+-----------------------------------------
 
 1. Dans `chatbot_app/views.py`, ajoutez :
 
@@ -169,7 +180,9 @@ urlpatterns = [
 ]
 ```
 
-## Création de l'interface React
+-----------------------------------------
+# 06 -  Création de l'interface React
+-----------------------------------------
 
 1. Dans le dossier `chatbot_frontend/src`, créez `Chatbot.js` :
 
@@ -237,7 +250,9 @@ function App() {
 export default App;
 ```
 
-## Lancement du projet
+-----------------------------------------
+# 07 - Lancement du projet
+-----------------------------------------
 
 1. Dans le terminal Django, lancez le serveur :
 
@@ -254,6 +269,8 @@ npm start
 Votre chatbot est maintenant fonctionnel ! Vous pouvez accéder à l'interface sur [http://localhost:3000](http://localhost:3000) et commencer à interagir avec le bot.
 
 
+------------------------
+------------------------
 ------------------------
 # Annexe 01
 -------------------------
