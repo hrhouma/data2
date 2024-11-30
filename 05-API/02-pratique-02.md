@@ -28,6 +28,17 @@ npm --version
 
 1. Ouvrez un terminal et exécutez :
 
+### Objectif: 
+
+![image](https://github.com/user-attachments/assets/dac4d620-de46-4cd0-977b-2fd5da84844e)
+
+
+
+```bash
+mkdir monchatbot
+cd monchatbot
+```
+
 ```bash
 python -m venv env
 ```
@@ -50,20 +61,18 @@ pip install django
 
 ### Création du projet Django
 
-1. Créez le projet :
+1. Créez le projet et créez l'application :
 
 ```bash
+cd monchatbot
 django-admin startproject chatbot_project
 cd chatbot_project
-```
-
-2. Créez l'application :
-
-```bash
 python manage.py startapp chatbot_app
 ```
 
-3. Ouvrez `chatbot_project/settings.py` et ajoutez `'chatbot_app'` à `INSTALLED_APPS` :
+
+
+2. Ouvrez `chatbot_project/settings.py` et ajoutez `'chatbot_app'` à `INSTALLED_APPS` :
 
 ```python
 INSTALLED_APPS = [
