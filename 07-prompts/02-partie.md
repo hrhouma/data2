@@ -1,3 +1,4 @@
+```
 Prompt for Job Search Tool Using RapidAPI and CursorAI
 Build a job search application specializing in Kubernetes-related roles (DevOps, Docker, Cloud Native). Use RapidAPI to fetch job listings (e.g., LinkedIn, Glassdoor) and CursorAI for smart recommendations and insights.
 Key Features:
@@ -32,4 +33,4 @@ Ensure the setup demonstrates Kubernetes deployments with automation and include
 https://www.ceph.com/en/
 Home - Ceph
 Ceph is an open source distributed storage system designed to evolve with data.
- 
+ ```
